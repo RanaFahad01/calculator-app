@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    /* border: 1px solid black; */
+}
+.main-logo {
+    color: whitesmoke;
+    background-color: black;
+    padding: 0.2em;
+    margin: 5px 15px;
+    border: 2px solid rgb(84, 83, 83);
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: black;
+    color: whitesmoke;
+}
+.footer-text {
+    font-size: large;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(71, 70, 70);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.calc-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 90%;
+    /* padding: 2em; */
+    margin: 2em;
+}
+#display {
+    width: 100%;
+    padding: 1em 0.5em;
+    font-size: 2rem;
+    border: 2px solid rgb(71, 70, 70);
+    border-radius: 5px;
+}
+
+.calc-body {
+    --GAP: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--GAP);
+    /* border: 1px solid black; */
+    margin: 1rem 2rem 2rem;
+    width: 75%;
+}
+
+.calc-body button {
+    flex: 1 1 calc(25% - var(--GAP));
+    max-width: calc(25% - var(--GAP));
+    aspect-ratio: 1;
+    font-size: 3rem;
+    background-color: transparent;
+    transition: 0.2s ease all;
+}
+.calc-body button:hover {
+    background-color: #ddd;
+}
+.calc-body button.control {
+    color: red;
+    font-weight: bold;
+}
